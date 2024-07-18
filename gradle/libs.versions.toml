@@ -1,0 +1,56 @@
+[versions]
+agp = "8.3.2"
+androidx-macro-benchmark = "1.2.2"
+appcompatVersion = "1.7.0"
+coreKtx = "1.13.1"
+daggerVersion = "2.44.2"
+kotlin = "1.8.21"
+dagger = "2.44.2"
+daggerAndroidSupport = "2.24"
+googleDaggerAndroidVersion = "2.24"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+kotlinStdlib = "1.9.20"
+loggingInterceptor = "4.9.3"
+material = "1.12.0"
+constraintlayout = "2.1.4"
+materialVersion = "1.12.0"
+retrofit = "2.9.0"
+okhttp = "4.10.0"
+rxandroid = "2.1.1"
+rxjava = "2.2.21"
+
+[libraries]
+
+
+
+appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+##dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+adapter-rxjava2 = { module = "com.squareup.retrofit2:adapter-rxjava2", version.ref = "retrofit" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+squareup-adapter-rxjava = { module = "com.squareup.retrofit2:adapter-rxjava", version.ref = "retrofit" }
+androidx-benchmark-macro = { group = "androidx.benchmark", name = "benchmark-macro-junit4", version.ref = "androidx-macro-benchmark" }
+rxandroid = { module = "io.reactivex.rxjava2:rxandroid", version.ref = "rxandroid" }
+rxjava = { module = "io.reactivex.rxjava2:rxjava", version.ref = "rxjava" }
+
+
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinKapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+
